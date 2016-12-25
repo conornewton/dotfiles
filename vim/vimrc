@@ -1,0 +1,7 @@
+"colorscheme badwolf
+syntax enable
+set number
+map <C-RIGHT> :tabn <CR>
+map <C-LEFT> :tabp <CR>
+hi Normal ctermfg=252 ctermbg=None
+"hi normal guibg=None ctermbg=None 
