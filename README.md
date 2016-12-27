@@ -1,3 +1,3 @@
-Github repository to keep track of all my dot files and such
+#Dotfiles
 
-dotfiles are symbolic links to files in this directory
+Github repository to keep track of all my dot files and sync them across different machines
