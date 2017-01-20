@@ -8,3 +8,7 @@ ln -sf $current_path/vim/vimrc ~/.vimrc
 
 #Install bashrc sym link
 ln -sf $current_path/bashrc/bashrc ~/.bashrc 
+
+mkdir -p ~/.vim/colors
+
+ln -sf $current_path/vim/colors/badwolf.vim ~/.vim/colors/badwolf.vim
