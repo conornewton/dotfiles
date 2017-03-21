@@ -1,9 +1,28 @@
+set nocompatible
+
 colorscheme badwolf
 syntax enable
-set number
-map <C-RIGHT> :tabn <CR>
-map <C-LEFT> :tabp <CR>
 
-set tabstop=4
+set number                  "show line number
+set nowrap                  "don't wrap lines
+
+set tabstop=4               "tab stuff
 set shiftwidth=4
 set expandtab
+set smarttab
+
+set hlsearch                "highlight search items
+set incsearch               "show maches as you search
+
+set noswapfile
+
+"tab shortcuts
+"C L-R changes tab
+"A L-R moves current tab
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+
+"map <C-RIGHT> :tabn <CR>    "change tab stuff
+"map <C-LEFT> :tabp <CR>
