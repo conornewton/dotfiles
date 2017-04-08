@@ -10,6 +10,8 @@ set tabstop=4               "tab stuff
 set shiftwidth=4
 set expandtab
 set smarttab
+set autoindent
+set smartindent
 
 set hlsearch                "highlight search items
 set incsearch               "show maches as you search
