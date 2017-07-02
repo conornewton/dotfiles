@@ -4,11 +4,10 @@
 
 #Allows 256 color support on my xfce4-arch machine
 #Needed for vim basically
-#if [ "$COLORTERM" == "xfce4-terminal" ]; then
-#    export TERM=xterm-256color
-#fi
+if [ "$COLORTERM" == "xfce4-terminal" ]; then
+    export TERM=xterm-256color
+fi
 
-export TERM=xterm-256color
 export VISUAL='vim'
 
 # If not running interactively, don't do anything
@@ -16,6 +15,7 @@ export VISUAL='vim'
 
 alias ls='ls --color=auto'
 alias fuck='sudo $(history -p !!)'
+alias tmux='tmux -2'
 
 #PS1='\u@\h \w>'
 #PS1='[\u@\h \W]\$ '
