@@ -1,4 +1,4 @@
-#
+
 # ~/.bashrc
 #
 
@@ -15,7 +15,6 @@ export VISUAL='vim'
 
 alias ls='ls --color=auto'
 alias fuck='sudo $(history -p !!)'
-alias tmux='tmux -2'
 
 #PS1='\u@\h \w>'
 #PS1='[\u@\h \W]\$ '
