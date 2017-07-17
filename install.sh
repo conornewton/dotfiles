@@ -13,5 +13,4 @@ mkdir -p ~/.vim/colors
 
 ln -sf $current_path/vim/colors/badwolf.vim ~/.vim/colors/badwolf.vim
 
-#Install tmux symbolic link
-ln -sf $current_path/tmux/tmux.conf ~/.tmux.conf
+
