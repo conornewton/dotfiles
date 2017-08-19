@@ -1,8 +1,8 @@
-
 # ~/.bashrc
 #
 
 export VISUAL='vim'
+export PATH=$PATH:/usr/local/bin
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -12,6 +12,9 @@ alias fuck='sudo $(history -p !!)'
 alias py='/usr/bin/env python3'
 alias rm='rm -r'
 
-#PS1='\u@\h \w>'
-#PS1='[\u@\h \W]\$ '
-PS1="\[\033[1;36m\]\u:\w\[\033[1;33m\]-> \[\033[0m\]"
+# Changing directories aliases
+alias up='cd ../'
+alias md='cd ~/Documents'
+alias dw='cd ~/Downloads'
+
+PS1='\e[0;32m\u@\h\e[m \w $ '

@@ -21,7 +21,5 @@ set noswapfile
 "tab shortcuts
 "C L-R changes tab
 "A L-R moves current tab
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
-nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+nnoremap <C-H> :tabprevious<CR>
+nnoremap <C-L> :tabnext<CR>
