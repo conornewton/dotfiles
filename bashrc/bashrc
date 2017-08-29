@@ -17,6 +17,7 @@ alias dw='cd ~/Downloads'
 alias hm='cd ~'
 
 #PS1 Stuff ahead
+#doesn't work on arch properly
 function git_colour {
 	local git_status="$(git status 2> /dev/null)"
 
