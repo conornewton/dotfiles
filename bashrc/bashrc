@@ -47,6 +47,7 @@ function git_branch {
 
 PS1='\[\e[0;32m\]'
 PS1+='\u@\h'
+PS1+='\[\e[m\]'
 PS1+=' \w'
 PS1+='\[$(git_colour)\]'
 PS1+='$(git_branch)'
