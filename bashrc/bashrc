@@ -46,10 +46,12 @@ function git_branch {
 	fi
 }
 
-PS1='\e[0;32m\u@\h\e[m \w' 
-PS1+='$(git_colour)'
+PS1='\[\e[0;32m\]'
+PS1+='\u@\h'
+PS1+=' \w'
+PS1+='\[$(git_colour)\]'
 PS1+='$(git_branch)'
-PS1+=' \e[m$ '
+PS1+=' \[\e[m\]$ '
 
 export PS1
 #PS1='\e[0;32m\u@\h\e[m \w \e[0;32m$(pc)\e[m $ '
