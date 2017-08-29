@@ -4,12 +4,13 @@ colorscheme badwolf
 syntax enable
 
 set number                  "show line number
-set nowrap                  "don't wrap lines
+
+"shows tabs as >> and trailing spaces as dots
+set list
+set listchars=tab:≫\ ,trail:·
 
 set tabstop=4               "tab stuff
 set shiftwidth=4
-set expandtab
-set smarttab
 set autoindent
 set smartindent
 
@@ -18,7 +19,6 @@ set incsearch               "show maches as you search
 
 set noswapfile
 
-"tab shortcuts
 "C L-R changes tab
 "A L-R moves current tab
 nnoremap <C-H> :tabprevious<CR>
