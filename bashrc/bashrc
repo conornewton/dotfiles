@@ -1,5 +1,6 @@
 # ~/.bashrc
 export VISUAL='vim'
+export EDITOR='vim'
 export PATH=$PATH:/usr/local/bin
 
 # If not running interactively, don't do anything
