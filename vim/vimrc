@@ -4,10 +4,11 @@ colorscheme badwolf
 syntax enable
 
 set number                  "show line number
+set cursorline
 
-"shows tabs as >> and trailing spaces as dots
+"shows trailing spaces as dots
 set list
-set listchars=tab:≫\ ,trail:·
+set listchars=trail:·
 
 set tabstop=4               "tab stuff
 set shiftwidth=4

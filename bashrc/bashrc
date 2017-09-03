@@ -16,6 +16,7 @@ alias up='cd ../'
 alias md='cd ~/Documents'
 alias dw='cd ~/Downloads'
 alias hm='cd ~'
+alias gt='cd ~/github'
 alias bk='cd "$OLDPWD"'
 
 #PS1 Stuff ahead
