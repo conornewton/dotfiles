@@ -1,4 +1,4 @@
-set nocompatible
+set nocompatible " fuck off vi
 
 colorscheme badwolf
 syntax enable
@@ -12,6 +12,12 @@ set listchars=trail:·
 
 set tabstop=4               "tab stuff
 set shiftwidth=4
+set expandtab
+set softtabstop=4
+
+"make files need tabs
+autocmd FileType make setlocal noexpandtab
+
 set autoindent
 set smartindent
 
