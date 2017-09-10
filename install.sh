@@ -21,6 +21,7 @@ ln -sf $current_path/vim/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
 cd ~/.vim/bundle
 git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
 git clone https://github.com/idris-hackers/idris-vim.git
+git clone https://github.com/neovimhaskell/haskell-vim.git
 
 #Install i3 dot files
 mkdir -p ~/.config/i3
