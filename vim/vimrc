@@ -12,14 +12,18 @@ set cursorline
 
 "shows trailing spaces as dots
 set list
-set listchars=trail:·
+" not working properly
+set listchars=tab:≫\ ,trail:·
 
 set tabstop=4               "tab stuff
 set shiftwidth=4
 set expandtab
 set softtabstop=4
 
-"make files need tabs
+"F8 toggles between converting tabs to spaces
+nnoremap <F8> :setlocal expandtab!<CR>
+
+"do not convert tabs to spaces in make files
 autocmd FileType make setlocal noexpandtab
 
 set autoindent
@@ -34,7 +38,6 @@ set noswapfile
 "A L-R moves current tab
 nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
-
 
 "Syntastic
 set statusline+=%#warningmsg#
