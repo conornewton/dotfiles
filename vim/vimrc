@@ -3,7 +3,6 @@ set nocompatible " fuck off vi
 execute pathogen#infect()
 filetype plugin indent on
 
-colorscheme badwolf
 filetype on
 syntax on
 
