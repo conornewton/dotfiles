@@ -183,11 +183,10 @@ exec --no-startup-id compton -b
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id setxkbmap gb
 exec --no-startup-id dropbox
-#exec --no-startup-id nm-applet #looks ugly
 #exec i3lock-fancy -gt ""
 
 #SOUND CONTROL
-
+#This is to use the F keys on my laptop.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
@@ -205,3 +204,6 @@ bindsym Print exec scrot -e 'mv $f ~/Images'
 smart_gaps on
 gaps inner 15
 gaps outer 5
+
+
+new_window pixel 0

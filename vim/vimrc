@@ -49,3 +49,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 
+"hides gui menus
+set guioptions-=m
+set guioptions-=T
+set guioptions-=R
+set guioptions-=L
