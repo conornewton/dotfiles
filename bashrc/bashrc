@@ -10,6 +10,7 @@ alias ls='ls --color=auto'
 alias fuck='sudo $(history -p !!)'
 alias py='/usr/bin/env python3'
 alias rm='rm -r'
+alias vim='gvim >/dev/null'
 
 # Changing directories aliases
 alias up='cd ../'

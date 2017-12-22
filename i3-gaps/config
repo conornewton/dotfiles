@@ -202,8 +202,8 @@ bindsym Print exec scrot -e 'mv $f ~/Images'
 
 # i3-gaps
 smart_gaps on
-gaps inner 15
-gaps outer 5
+gaps inner 5
+gaps outer 1
 
 
 new_window pixel 0

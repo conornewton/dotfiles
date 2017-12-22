@@ -53,4 +53,5 @@ let g:syntastic_check_on_wq = 0
 set guioptions-=m
 set guioptions-=T
 set guioptions-=R
+set guioptions-=r
 set guioptions-=L
