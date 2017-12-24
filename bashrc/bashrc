@@ -10,7 +10,6 @@ alias ls='ls --color=auto'
 alias fuck='sudo $(history -p !!)'
 alias py='/usr/bin/env python3'
 alias rm='rm -r'
-alias vim='gvim >/dev/null'
 
 # Changing directories aliases
 alias up='cd ../'
@@ -21,6 +20,8 @@ alias gt='cd ~/github'
 alias bk='cd "$OLDPWD"'
 
 #PS1 Stuff ahead
+#Functions for git colour inside of ps1
+#this works with versions of git 2.0+ (I think)
 function git_colour {
 	local git_status="$(git status 2> /dev/null)"
 	

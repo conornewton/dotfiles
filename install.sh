@@ -20,6 +20,7 @@ cd ~/.vim/bundle
 git clone https://github.com/vim-syntastic/syntastic.git
 git clone https://github.com/idris-hackers/idris-vim.git
 git clone https://github.com/neovimhaskell/haskell-vim.git
+git clone https://github.com/leafgarland/typescript-vim.git
 
 #Install i3 dot files
 mkdir -p ~/.config/i3
