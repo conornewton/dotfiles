@@ -18,6 +18,7 @@ alias dw='cd ~/Downloads'
 alias hm='cd ~'
 alias gt='cd ~/github'
 alias bk='cd "$OLDPWD"'
+alias lec='cd ~/Dropbox/My\ Documents/University/Mathematics/2/'
 
 #PS1 Stuff ahead
 #Functions for git colour inside of ps1
