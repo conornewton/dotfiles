@@ -20,7 +20,7 @@ set expandtab
 set softtabstop=4
 
 "F8 toggles between converting tabs to spaces
-nnoremap <F8> :setlocal expandtab<CR>
+nnoremap <F8> :setlocal expandtab!<CR>
 
 "do not convert tabs to spaces in make files
 autocmd FileType make setlocal noexpandtab
