@@ -20,7 +20,7 @@ set expandtab
 set softtabstop=4
 
 "escape insert mode
-inoremap jj <ESC>
+inoremap ;; <ESC>
 
 "F8 toggles between converting tabs to spaces
 nnoremap <F8> :setlocal expandtab!<CR>
