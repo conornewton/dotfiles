@@ -19,8 +19,13 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4
 
+"escape insert mode
+inoremap jj <ESC>
+
 "F8 toggles between converting tabs to spaces
 nnoremap <F8> :setlocal expandtab!<CR>
+"F7 toggles line wraping
+nnoremap <F7> :setlocal wrap!<CR>
 
 "do not convert tabs to spaces in make files
 autocmd FileType make setlocal noexpandtab
@@ -37,6 +42,12 @@ set noswapfile
 "A L-R moves current tab
 nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
+
+"use natural keys for movement
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
 
 "Syntastic
 set statusline+=%#warningmsg#
