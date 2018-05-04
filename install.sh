@@ -8,19 +8,21 @@ ln -sf $current_path/bashrc/bashrc ~/.bashrc
 
 ln -sf $current_path/vim/vimrc ~/.vimrc
 mkdir -p ~/.vim/colors
-mkdir -p ~/.vim/bundle
-mkdir -p ~/.vim/autoload
 
-#sym link pathogen (plugin manager)
-#TODO: change this to download it aswell
-ln -sf $current_path/vim/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
+#cd /tmp
+#git clone https://github.com/schickele/vim
+#cp /tmp/vim/colors/fruchtig.vim ~/.vim/colors
+
+mkdir -p ~/.vim/bundle
 
 #download vim plugins
+#TODO: update command
 cd ~/.vim/bundle
 git clone https://github.com/vim-syntastic/syntastic.git
 git clone https://github.com/idris-hackers/idris-vim.git
 git clone https://github.com/neovimhaskell/haskell-vim.git
 git clone https://github.com/leafgarland/typescript-vim.git
+git clone https://github.com/tpope/vim-pathogen.git
 
 #Install i3 dot files
 mkdir -p ~/.config/i3

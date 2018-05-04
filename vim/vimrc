@@ -1,9 +1,10 @@
 set nocompatible " fuck off vi
 
-execute pathogen#infect()
+source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 filetype plugin indent on
 
 filetype on
+
 syntax on
 
 set number                  "show line number
