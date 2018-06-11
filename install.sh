@@ -35,3 +35,6 @@ ln -sf $current_path/i3blocks/i3blocks.conf ~/.i3blocks.conf
 ln -sf $current_path/i3blocks/scripts/battery.py ~/.i3blocks/scripts/battery.py
 ln -sf $current_path/i3blocks/scripts/volume-pulseaudio ~/.i3blocks/scripts/volume-pulseaudio
 ln -sf $current_path/i3blocks/scripts/wifi.py ~/.i3blocks/scripts/wifi.py
+
+#install terminator dotfiles
+ln -sf $current_path/terminator/config/ ~/.config/terminator

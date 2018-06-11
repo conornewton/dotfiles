@@ -175,15 +175,8 @@ bar {
     }
 }
 
-# locks the screen
-# uses i3lock-fancy and i3lock-color from github
-#bindsym $mod+shift+x exec i3lock-fancy -gt ""
-
-exec --no-startup-id compton -b
-exec --no-startup-id nitrogen --restore
 exec --no-startup-id setxkbmap gb
 exec --no-startup-id dropbox
-#exec i3lock-fancy -gt ""
 
 #SOUND CONTROL
 #This is to use the F keys on my laptop.
@@ -200,10 +193,11 @@ bindsym XF86AudioPrev exec playerctl previous
 #print screen uses scrot and saves images in the Images dir
 bindsym Print exec scrot -e 'mv $f ~/Images'
 
+#locks screen when using light-dm
+bindsym ctrl+l exec dm-tool switch-to-greeter
+
 # i3-gaps
 smart_gaps on
 gaps inner 5
 gaps outer 1
-
-
 new_window pixel 0
