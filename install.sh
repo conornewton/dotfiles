@@ -37,4 +37,5 @@ ln -sf $current_path/i3blocks/scripts/volume-pulseaudio ~/.i3blocks/scripts/volu
 ln -sf $current_path/i3blocks/scripts/wifi.py ~/.i3blocks/scripts/wifi.py
 
 #install terminator dotfiles
-ln -sf $current_path/terminator/config/ ~/.config/terminator
+mkdir -p ~/.config/terminator
+ln -sf $current_path/terminator/config ~/.config/terminator/config
