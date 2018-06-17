@@ -40,9 +40,8 @@ set incsearch               "show maches as you search
 set noswapfile
 
 "C L-R changes tab
-"A L-R moves current tab
-nnoremap <C-H> :tabprevious<CR>
-nnoremap <C-L> :tabnext<CR>
+nnoremap <C-J> :tabprevious<CR>
+nnoremap <C-;> :tabnext<CR>
 
 "use natural keys for movement
 noremap ; l

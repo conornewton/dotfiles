@@ -175,6 +175,9 @@ bar {
     }
 }
 
+exec --no-startup-id light-locker
+exec --no-startip-id nitrogen
+exec --no-startup-id compton -b
 exec --no-startup-id setxkbmap gb
 exec --no-startup-id dropbox
 
@@ -193,8 +196,8 @@ bindsym XF86AudioPrev exec playerctl previous
 #print screen uses scrot and saves images in the Images dir
 bindsym Print exec scrot -e 'mv $f ~/Images'
 
-#locks screen when using light-dm
-bindsym ctrl+l exec dm-tool switch-to-greeter
+#locks screen when using light-dm and light locker
+bindsym $mod+ctrl+l exec light-locker-command -l
 
 # i3-gaps
 smart_gaps on

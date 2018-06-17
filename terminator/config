@@ -1,4 +1,5 @@
 [global_config]
+  borderless = True
   title_use_system_font = False
 [keybindings]
 [layouts]
@@ -15,5 +16,6 @@
     background_color = "#ffffff"
     cursor_color = "#aaaaaa"
     font = DejaVu Sans Mono 10
+    scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
