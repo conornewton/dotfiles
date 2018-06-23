@@ -16,6 +16,8 @@
     background_color = "#ffffff"
     cursor_color = "#aaaaaa"
     font = DejaVu Sans Mono 10
+    foreground_color = "#c0bebf"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
+    use_theme_colors = True
