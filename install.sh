@@ -9,14 +9,9 @@ ln -sf $current_path/bashrc/bashrc ~/.bashrc
 ln -sf $current_path/vim/vimrc ~/.vimrc
 mkdir -p ~/.vim/colors
 
-#cd /tmp
-#git clone https://github.com/schickele/vim
-#cp /tmp/vim/colors/fruchtig.vim ~/.vim/colors
-
 mkdir -p ~/.vim/bundle
 
-#download vim plugins
-#TODO: update command
+#dont download if already installed
 cd ~/.vim/bundle
 git clone https://github.com/vim-syntastic/syntastic.git
 git clone https://github.com/idris-hackers/idris-vim.git
@@ -39,3 +34,6 @@ ln -sf $current_path/i3blocks/scripts/wifi.py ~/.i3blocks/scripts/wifi.py
 #install terminator dotfiles
 mkdir -p ~/.config/terminator
 ln -sf $current_path/terminator/config ~/.config/terminator/config
+
+#install .Xresources
+ln -sf $current_path/Xresources ~/.Xresources
