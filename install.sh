@@ -6,18 +6,31 @@ current_path="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 #Install bashrc sym link
 ln -sf $current_path/bashrc/bashrc ~/.bashrc 
 
+#Vim
 ln -sf $current_path/vim/vimrc ~/.vimrc
-mkdir -p ~/.vim/colors
+
+#if the git repository does not exist clone it
+#otherwise update it
+function cloneorupdate {
+    ##these are called parameter extensions
+    last=${1##*/} # removes everything before /
+    bare=${last%%.git} # keep everthing before .git
+    if [ ! -d "$bare" ] ; then
+        git clone "$1" "$bare"
+    else
+        cd "$bare"
+        git pull "$1"
+    fi
+}
 
 mkdir -p ~/.vim/bundle
-
-#dont download if already installed
 cd ~/.vim/bundle
-git clone https://github.com/vim-syntastic/syntastic.git
-git clone https://github.com/idris-hackers/idris-vim.git
-git clone https://github.com/neovimhaskell/haskell-vim.git
-git clone https://github.com/leafgarland/typescript-vim.git
-git clone https://github.com/tpope/vim-pathogen.git
+cloneorupdate https://github.com/vim-syntastic/syntastic.git
+cloneorupdate https://github.com/vim-syntastic/syntastic.git
+cloneorupdate https://github.com/idris-hackers/idris-vim.git
+cloneorupdate https://github.com/neovimhaskell/haskell-vim.git
+cloneorupdate https://github.com/leafgarland/typescript-vim.git
+cloneorupdate https://github.com/tpope/vim-pathogen.git
 
 #Install i3 dot files
 mkdir -p ~/.config/i3
