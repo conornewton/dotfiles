@@ -1,2 +1,5 @@
 URxvt.font: xft:dejavu sans mono:size=10
 URxvt.scrollBar: false
+URxvt.cursorColor: magenta
+URxvt.background: [50]#000000
+URxvt.depth: 32

@@ -174,10 +174,10 @@ bar {
 }
 
 exec --no-startup-id light-locker
-exec --no-startip-id nitrogen --restore
 exec --no-startup-id compton -b
 exec --no-startup-id setxkbmap gb
 exec --no-startup-id dropbox
+exec --no-startip-id nitrogen --restore
 
 #SOUND CONTROL
 #This is to use the F keys on my laptop.

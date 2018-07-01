@@ -50,3 +50,9 @@ ln -sf $current_path/terminator/config ~/.config/terminator/config
 
 #install .Xresources
 ln -sf $current_path/Xresources ~/.Xresources
+
+#install .xmonad config
+ln -sf $current_path/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
+
+#install xmobar config
+ln -sf $current_path/xmonad/xmobarrc ~/.xmobarrc

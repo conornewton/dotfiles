@@ -1,5 +1,8 @@
 set nocompatible " fuck off vi
 
+colorscheme neodark
+let g:neodark#terminal_transparent = 1
+
 source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 filetype plugin indent on
 
