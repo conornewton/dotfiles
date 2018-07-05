@@ -52,27 +52,23 @@ function git_branch {
 }
 
 #LIGHT PS1
-PS1='\[\e[1;30m\]'
-PS1+='\u@\h'
-PS1+='\[\e[m\]'
-PS1+=' \w'
-PS1+='\[$(git_colour)\]'
-PS1+='$(git_branch)'
-PS1+=' \[\e[m\]$ '
-PS1+=' \[\e[1;30m\]'
-
-#DARK PS1
 #PS1='\[\e[1;30m\]'
 #PS1+='\u@\h'
-#PS1+='\[\e[1;32m\]'
+#PS1+='\[\e[m\]'
 #PS1+=' \w'
 #PS1+='\[$(git_colour)\]'
 #PS1+='$(git_branch)'
 #PS1+=' \[\e[m\]$ '
 #PS1+=' \[\e[1;30m\]'
 
-export PS1
+#DARK PS1
+PS1='\[\e[1;96m\]'
+PS1+='\u@\h'
+PS1+='\[\e[1;96m\]'
+PS1+=' \w'
+PS1+='\[$(git_colour)\]'
+PS1+='$(git_branch)'
+PS1+=' \[\e[1;96m\]$ '
+PS1+=' \[\e[1;96m\]'
 
-#directory colors
-#LS_COLORS=$LS_COLORS: 'di=0;35:'
-#export LS_COLORS
+export PS1

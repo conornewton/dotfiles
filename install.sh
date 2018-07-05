@@ -32,6 +32,11 @@ cloneorupdate https://github.com/neovimhaskell/haskell-vim.git
 cloneorupdate https://github.com/leafgarland/typescript-vim.git
 cloneorupdate https://github.com/tpope/vim-pathogen.git
 
+mkdir -p ~/.vim/colors
+cd ~/.vim/colors
+
+curl https://raw.githubusercontent.com/KietaNakamura/neodark.vim/master/colors/neodark.vim >> neodark.vim
+
 #Install i3 dot files
 mkdir -p ~/.config/i3
 ln -sf $current_path/i3-gaps/config ~/.config/i3/config
@@ -56,3 +61,5 @@ ln -sf $current_path/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
 
 #install xmobar config
 ln -sf $current_path/xmonad/xmobarrc ~/.xmobarrc
+
+xmonad --recompile
