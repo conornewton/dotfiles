@@ -69,7 +69,6 @@ PS1+=' \w'
 PS1+='\[$(git_colour)\]'
 PS1+='$(git_branch)'
 PS1+=' \[\e[1;96m\]$ '
-PS1+=' \[\e[1;96m\]'
-PS1+='\e[m\]'
+PS1+=' \[\e[m\]'
 
 export PS1
