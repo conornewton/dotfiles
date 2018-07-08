@@ -73,6 +73,9 @@ nnoremap <F9> :SyntasticToggleMode <CR>
 
 " fixes markdown with latex
 
+let g:powerline_pycmd="py3"
+set laststatus=2
+
 function! MathAndLiquid()
     "" Define certain regions
     " Block math. Look for "$$[anything]$$"

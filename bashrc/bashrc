@@ -72,9 +72,3 @@ PS1+=' \[\e[1;96m\]$ '
 PS1+=' \[\e[m\]'
 
 export PS1
-
-#maybe move this
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-ibus-deamon -d -x
