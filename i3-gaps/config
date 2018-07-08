@@ -175,7 +175,8 @@ bar {
 
 exec --no-startup-id light-locker
 exec --no-startup-id compton -b
-exec --no-startup-id setxkbmap gb
+#don't need this as i know use ibus for input
+#exec --no-startup-id setxkbmap gb
 exec --no-startup-id dropbox
 
 #settings background does not work??

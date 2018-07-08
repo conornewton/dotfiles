@@ -24,7 +24,6 @@ set expandtab
 set softtabstop=4
 
 "escape insert mode
-inoremap ;; <ESC>
 inoremap jj <ESC>
 
 "F8 toggles between converting tabs to spaces
@@ -71,18 +70,6 @@ set guioptions-=r
 set guioptions-=L
 
 nnoremap <F9> :SyntasticToggleMode <CR>
-
-" Disable Arrow keys in Escape mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" Disable Arrow keys in Insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
 
 " fixes markdown with latex
 
