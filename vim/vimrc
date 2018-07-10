@@ -40,8 +40,6 @@ set smartindent
 set hlsearch                "highlight search items
 set incsearch               "show maches as you search
 
-set noswapfile
-
 "C L-R changes tab
 nnoremap <C-J> :tabprevious<CR>
 nnoremap <C-K> :tabnext<CR>
@@ -75,6 +73,13 @@ nnoremap <F9> :SyntasticToggleMode <CR>
 
 let g:powerline_pycmd="py3"
 set laststatus=2
+
+let g:livepreview_previewer = "evince"
+let g:livepreview_engine = "xelatex"
+set updatetime=1000
+nnoremap <F6> :LLPStartPreview<CR>
+
+
 
 function! MathAndLiquid()
     "" Define certain regions

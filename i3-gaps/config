@@ -176,10 +176,9 @@ bar {
 exec --no-startup-id light-locker
 exec --no-startup-id compton -b
 exec --no-startup-id dropbox
-
-#settings background does not work??
 exec --no-startup-id /home/conor/.fehbg
 exec --no-startup-id ibus-daemon -d -x
+exec --no-startup-id setxkbmap gb
 
 #SOUND CONTROL
 #This is to use the F keys on my laptop.

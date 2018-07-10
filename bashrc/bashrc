@@ -59,7 +59,6 @@ function git_branch {
 #PS1+='\[$(git_colour)\]'
 #PS1+='$(git_branch)'
 #PS1+=' \[\e[m\]$ '
-#PS1+=' \[\e[1;30m\]'
 
 #DARK PS1
 PS1='\[\e[1;96m\]'

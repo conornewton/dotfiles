@@ -31,6 +31,7 @@ cloneorupdate https://github.com/idris-hackers/idris-vim.git
 cloneorupdate https://github.com/neovimhaskell/haskell-vim.git
 cloneorupdate https://github.com/leafgarland/typescript-vim.git
 cloneorupdate https://github.com/tpope/vim-pathogen.git
+cloneorupdate https://github.com/xuhdev/vim-latex-live-preview.git
 
 mkdir -p ~/.vim/colors
 cd ~/.vim/colors
