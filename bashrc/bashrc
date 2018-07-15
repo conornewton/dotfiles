@@ -20,6 +20,11 @@ alias gt='cd ~/github'
 alias bk='cd "$OLDPWD"'
 alias lec='cd ~/Dropbox/My\ Documents/University/Mathematics/2/'
 
+#powerline takes too long to load??
+#if [ -f /lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh ]; then
+#    source /lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh 
+#fi
+
 #PS1 Stuff ahead
 #Functions for git colour inside of ps1
 #this works with versions of git 2.0+ (I think)
