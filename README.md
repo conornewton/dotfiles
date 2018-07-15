@@ -6,9 +6,11 @@ My current setup is using:
 
 - Arch Linux
 - i3-gaps
-- Vim
+- i3-blocks
+- vim
 - URxvt
-- Bash
+- bash
+
 
 
 ![desktop](./i3-screenshot.png)
