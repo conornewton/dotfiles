@@ -5,13 +5,15 @@ let g:neodark#terminal_transparent = 1
 
 source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-filetype plugin indent on
+filetype plugin on
 
 filetype on
 syntax on
 
 set number                  "show line number
 set cursorline
+
+set encoding=utf-8
 
 "shows trailing spaces as dots
 set list
@@ -34,23 +36,13 @@ nnoremap <F7> :setlocal wrap!<CR>
 "do not convert tabs to spaces in make files
 autocmd FileType make setlocal noexpandtab
 
-set autoindent
-set smartindent
-
-set hlsearch                "highlight search items
-set incsearch               "show maches as you search
-
-"C L-R changes tab
-nnoremap <C-J> :tabprevious<CR>
-nnoremap <C-K> :tabnext<CR>
-
 "use natural keys for movement
 noremap ; l
 noremap l k
 noremap k j
 noremap j h
 
-"Syntastic
+"-----Syntastic-------
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -60,47 +52,19 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"hides gui menus
-set guioptions-=m
-set guioptions-=T
-set guioptions-=R
-set guioptions-=r
-set guioptions-=L
-
 nnoremap <F9> :SyntasticToggleMode <CR>
 
-" fixes markdown with latex
-
+"-----POWERLINE------
 let g:powerline_pycmd="py3"
 set laststatus=2
 
+"-----Latex Preview----
 let g:livepreview_previewer = "evince"
 let g:livepreview_engine = "xelatex"
 set updatetime=1000
+
 nnoremap <F6> :LLPStartPreview<CR>
 
 
-
-function! MathAndLiquid()
-    "" Define certain regions
-    " Block math. Look for "$$[anything]$$"
-    syn region math start=/\$\$/ end=/\$\$/
-    " inline math. Look for "$[not $][anything]$"
-    syn match math_block '\$[^$].\{-}\$'
-
-    " Liquid single line. Look for "{%[anything]%}"
-    syn match liquid '{%.*%}'
-    " Liquid multiline. Look for "{%[anything]%}[anything]{%[anything]%}"
-    syn region highlight_block start='{% highlight .*%}' end='{%.*%}'
-    " Fenced code blocks, used in GitHub Flavored Markdown (GFM)
-    syn region highlight_block start='```' end='```'
-
-    "" Actually highlight those regions.
-    hi link math Statement
-    hi link liquid Statement
-    hi link highlight_block Function
-    hi link math_block Function
-endfunction
-
-" Call everytime we open a Markdown file
-autocmd BufRead,BufNewFile,BufEnter *.md,*.markdown call MathAndLiquid()
+"set .tex files filetype to tex
+autocmd BufNewFile,BufRead *.tex set filetype=tex

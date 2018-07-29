@@ -174,7 +174,9 @@ bar {
 }
 
 exec --no-startup-id light-locker
-exec --no-startup-id compton -b
+#exec --no-startup-id compton -b
+exec xrdb ~/.Xresources
+exec --no-startup-id weston
 exec --no-startup-id dropbox
 exec --no-startup-id /home/conor/.fehbg
 exec --no-startup-id ibus-daemon -d -x
