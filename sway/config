@@ -27,7 +27,7 @@ font pango:Font Awesome, Powerline, DejaVu Sans Mono, 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -37,7 +37,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id rofi -theme solarized -font "hack 10" -show run
 
 # change focus
 bindsym $mod+j focus left
@@ -174,9 +174,8 @@ bar {
 }
 
 exec --no-startup-id light-locker
-exec --no-startup-id compton -b
+exec --no-startup-id weston
 exec --no-startup-id dropbox
-exec --no-startup-id /home/conor/.fehbg
 exec --no-startup-id ibus-daemon -d -x
 exec --no-startup-id setxkbmap gb
 
@@ -203,3 +202,7 @@ smart_gaps on
 gaps inner 5
 gaps outer 1
 new_window pixel 0
+
+
+ output "*" background /home/conor/Images/excunroaacq01.png fill
+

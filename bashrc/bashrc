@@ -17,8 +17,9 @@ alias md='cd ~/Documents'
 alias dw='cd ~/Downloads'
 alias hm='cd ~'
 alias gt='cd ~/github'
+alias dr='cd ~/Dropbox/My\ Documents'
 alias bk='cd "$OLDPWD"'
-alias lec='cd ~/Dropbox/My\ Documents/University/Mathematics/2/'
+alias lec='cd ~/Dropbox/My\ Documents/University/Mathematics/'
 
 #powerline takes too long to load??
 #if [ -f /lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh ]; then

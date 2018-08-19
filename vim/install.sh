@@ -18,6 +18,7 @@ function cloneorupdate {
 
 mkdir -p ~/.vim/bundle
 cd ~/.vim/bundle
+
 cloneorupdate https://github.com/vim-syntastic/syntastic.git
 cloneorupdate https://github.com/idris-hackers/idris-vim.git
 cloneorupdate https://github.com/neovimhaskell/haskell-vim.git
@@ -28,6 +29,7 @@ cloneorupdate https://github.com/xuhdev/vim-latex-live-preview.git
 mkdir -p ~/.vim/colors
 cd ~/.vim/colors
 
+echo "installing colorscheme"
 curl https://raw.githubusercontent.com/KeitaNakamura/neodark.vim/master/colors/neodark.vim > neodark.vim
 
 mkdir -p ~/.vim/ftplugin

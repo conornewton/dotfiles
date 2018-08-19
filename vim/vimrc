@@ -66,5 +66,10 @@ set updatetime=1000
 nnoremap <F6> :LLPStartPreview<CR>
 
 
+inoremap ( ()<Left>
+inoremap " ""<Left>
+inoremap { {}<Left>
+
+
 "set .tex files filetype to tex
 autocmd BufNewFile,BufRead *.tex set filetype=tex

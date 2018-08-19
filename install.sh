@@ -34,3 +34,6 @@ ln -sf $current_path/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
 
 #install xmobar config
 ln -sf $current_path/xmonad/xmobarrc ~/.xmobarrc
+
+#install sway config
+ln -sf $current_path/sway/config ~/.config/sway/config
