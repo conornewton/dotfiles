@@ -55,8 +55,8 @@ let g:syntastic_check_on_wq = 0
 nnoremap <F9> :SyntasticToggleMode <CR>
 
 "-----POWERLINE------
-let g:powerline_pycmd="py3"
-set laststatus=2
+""let g:powerline_pycmd="py3"
+""set laststatus=2
 
 "-----Latex Preview----
 let g:livepreview_previewer = "evince"
