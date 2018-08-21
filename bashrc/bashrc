@@ -21,10 +21,8 @@ alias dr='cd ~/Dropbox/My\ Documents'
 alias bk='cd "$OLDPWD"'
 alias lec='cd ~/Dropbox/My\ Documents/University/Mathematics/'
 
-#powerline takes too long to load??
-#if [ -f /lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh ]; then
-#    source /lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh 
-#fi
+
+alias vim='vim-huge'
 
 #PS1 Stuff ahead
 #Functions for git colour inside of ps1
