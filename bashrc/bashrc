@@ -22,7 +22,6 @@ alias bk='cd "$OLDPWD"'
 alias lec='cd ~/Dropbox/My\ Documents/University/Mathematics/'
 
 
-alias vim='vim-huge'
 
 #PS1 Stuff ahead
 #Functions for git colour inside of ps1

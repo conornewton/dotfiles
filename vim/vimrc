@@ -11,7 +11,7 @@ filetype on
 syntax on
 
 set number                  "show line number
-set cursorline
+""set cursorline
 
 set encoding=utf-8
 
