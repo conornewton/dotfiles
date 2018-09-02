@@ -13,7 +13,7 @@ syntax on
 set number                  "show line number
 ""set cursorline
 
-set encoding=utf-8
+set encoding=UTF-8
 
 "shows trailing spaces as dots
 set list
@@ -63,13 +63,14 @@ let g:livepreview_previewer = "evince"
 let g:livepreview_engine = "xelatex"
 set updatetime=1000
 
-nnoremap <F6> :LLPStartPreview<CR>
 
+let g:md_pdf_viewer ="evince"
+
+nnoremap <F6> :LLPStartPreview<CR>
 
 inoremap ( ()<Left>
 inoremap " ""<Left>
 inoremap { {}<Left>
-
 
 "set .tex files filetype to tex
 autocmd BufNewFile,BufRead *.tex set filetype=tex

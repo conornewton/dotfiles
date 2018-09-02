@@ -27,5 +27,3 @@ inoremap  \\item <Esc>:call TexBeginIn("itemize")<CR>
 inoremap  \\enum <Esc>:call TexBeginIn("enumerate")<CR>
 inoremap  \\def <Esc>:call TexBeginIn("defn")<CR>
 inoremap  \\eq <Esc>:call TexBeginIn("equation*")<CR>
-
-""autocmd! BufNewFile,BufRead,VimEnter * 0r ~/.vim/templates/template.tex
