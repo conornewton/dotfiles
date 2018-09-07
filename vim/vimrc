@@ -64,7 +64,7 @@ let g:livepreview_engine = "xelatex"
 set updatetime=1000
 
 
-let g:md_pdf_viewer ="evince"
+let g:md_pdf_viewer = "mupdf"
 
 nnoremap <F6> :LLPStartPreview<CR>
 

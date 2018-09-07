@@ -1,3 +1,5 @@
+current_path="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 mkdir -p ~/.i3blocks/scripts
 
 ln -sf $current_path/i3blocks/i3blocks.conf ~/.i3blocks.conf
