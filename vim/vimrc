@@ -3,15 +3,18 @@ set nocompatible " fuck off vi
 colorscheme neodark
 let g:neodark#terminal_transparent = 1
 
-source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-filetype plugin on
+call plug#begin('~/.vim/plugged')
 
+Plug 'scroolose/nerdtree'
+
+call plug#end()
+
+
+filetype plugin on
 filetype on
 syntax on
 
 set number                  "show line number
-""set cursorline
 
 set encoding=UTF-8
 
@@ -53,10 +56,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 nnoremap <F9> :SyntasticToggleMode <CR>
-
-"-----POWERLINE------
-""let g:powerline_pycmd="py3"
-""set laststatus=2
 
 "-----Latex Preview----
 let g:livepreview_previewer = "evince"
