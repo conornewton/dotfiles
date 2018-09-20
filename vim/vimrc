@@ -5,7 +5,10 @@ let g:neodark#terminal_transparent = 1
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'scroolose/nerdtree'
+Plug 'scrooloose/nerdtree'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'conornewton/vim-pandoc-markdown-preview'
+Plug 'conornewton/vim-latex-preview'
 
 call plug#end()
 
@@ -30,11 +33,7 @@ set softtabstop=4
 
 "escape insert mode
 inoremap jj <ESC>
-
-"F8 toggles between converting tabs to spaces
-nnoremap <F8> :setlocal expandtab!<CR>
-"F7 toggles line wraping
-nnoremap <F7> :setlocal wrap!<CR>
+noremap zz :w<CR>
 
 "do not convert tabs to spaces in make files
 autocmd FileType make setlocal noexpandtab
@@ -45,27 +44,10 @@ noremap l k
 noremap k j
 noremap j h
 
-"-----Syntastic-------
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-nnoremap <F9> :SyntasticToggleMode <CR>
-
-"-----Latex Preview----
-let g:livepreview_previewer = "evince"
-let g:livepreview_engine = "xelatex"
-set updatetime=1000
-
 
 let g:md_pdf_viewer = "mupdf"
-
-nnoremap <F6> :LLPStartPreview<CR>
+let g:latex_pdf_viewer = "mupdf"
+let g:latex_engine = "xelatex"
 
 inoremap ( ()<Left>
 inoremap " ""<Left>
@@ -73,3 +55,7 @@ inoremap { {}<Left>
 
 "set .tex files filetype to tex
 autocmd BufNewFile,BufRead *.tex set filetype=tex
+
+
+nnoremap <F8> :setlocal expandtab!<CR>
+nnoremap <F7> :setlocal wrap!<CR>
