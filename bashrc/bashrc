@@ -1,7 +1,7 @@
 # ~/.bashrc
 export VISUAL='vim'
 export EDITOR='vim'
-export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/bin:~/.local/bin
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -17,11 +17,10 @@ alias md='cd ~/Documents'
 alias dw='cd ~/Downloads'
 alias hm='cd ~'
 alias gt='cd ~/github'
+alias dt='cd ~/github/dotfiles'
 alias dr='cd ~/Dropbox/My\ Documents'
 alias bk='cd "$OLDPWD"'
 alias lec='cd ~/Dropbox/My\ Documents/University/Mathematics/'
-
-
 
 #PS1 Stuff ahead
 #Functions for git colour inside of ps1

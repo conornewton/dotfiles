@@ -1,8 +1,0 @@
-URxvt.font: xft:DejaVu Sans Mono for Powerline:size=9
-URxvt.scrollBar: false
-URxvt.cursorColor: magenta
-URxvt.background: [70]#000000
-URxvt.foreground: #ffffff
-URxvt.depth: 32
-URxvt.inputMethod: ibus
-URxvt.perl-ext-common: resize-font

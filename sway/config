@@ -6,7 +6,7 @@ font pango: DejaVu Sans Mono, Font Awesome, 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st -f "DejaVu Sans Mono:size=9"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -42,7 +42,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+b split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v split vS
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -163,3 +163,18 @@ gaps outer 1
 new_window pixel 0
 
 output "*" background /home/conor/Images/excunroaacq01.png fill
+
+
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 640 480
+for_window [instance="dropdown"] move scratchpad
+exec --no-startup-id st -n dropdown -f "DejaVu Sans Mono:size=9"
+
+bindsym $mod+u [instance="dropdown"] scratchpad show
+
+for_window [instance="media"] floating enable
+for_window [instance="media"] resize set 640 480
+for_window [instance="media"] move scratchpad
+exec --no-startup-id st -n media -f "DejaVu Sans Mono:size=9" -e alsamixer
+
+bindsym $mod+m [instance="media"] scratchpad show
