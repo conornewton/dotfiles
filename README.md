@@ -5,10 +5,10 @@ Git repository to keep track of all my dot files and sync them across different 
 My current setup is using:
 
 - Arch Linux
-- i3-gaps
+- sway
 - i3-blocks
 - vim
-- URxvt
+- termite
 - bash
 
 

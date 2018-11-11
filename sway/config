@@ -6,7 +6,7 @@ font pango: DejaVu Sans Mono, Font Awesome, 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st -f "DejaVu Sans Mono:size=9"
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -39,10 +39,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+b splith
 
 # split in vertical orientation
-bindsym $mod+v split vS
+bindsym $mod+v splitv
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -141,11 +141,12 @@ bar {
     }
 }
 
+# START UP
 exec --no-startup-id dropbox
 exec --no-startup-id setxkbmap gb
 
-#SOUND CONTROL
-#This is to use the F keys on my laptop.
+# SOUND CONTROL
+# This is to use the F keys on my laptop.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
@@ -156,25 +157,11 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# i3-gaps
+# gaps
 smart_gaps on
 gaps inner 5
 gaps outer 1
 new_window pixel 0
 
+# wallpaper
 output "*" background /home/conor/Images/excunroaacq01.png fill
-
-
-for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 640 480
-for_window [instance="dropdown"] move scratchpad
-exec --no-startup-id st -n dropdown -f "DejaVu Sans Mono:size=9"
-
-bindsym $mod+u [instance="dropdown"] scratchpad show
-
-for_window [instance="media"] floating enable
-for_window [instance="media"] resize set 640 480
-for_window [instance="media"] move scratchpad
-exec --no-startup-id st -n media -f "DejaVu Sans Mono:size=9" -e alsamixer
-
-bindsym $mod+m [instance="media"] scratchpad show
