@@ -8,11 +8,17 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec termite
 
+bindsym $mod+shift+Return exec termite --class=FLOATING
+for_window [class="FLOATING"] floating enable
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # rofi
 bindsym $mod+d exec --no-startup-id rofi -theme Arc-Dark -show run
+
+bindsym $mod+shift+r reload
+bindsym $mod+shift+e exit
 
 # change focus
 bindsym $mod+j focus left
@@ -121,11 +127,11 @@ set $text-color2         #676E7D
 set $urgent-bg-color     #E53935
 
 # window colors
-#                       border              background         text                 indicator
-client.focused          $bgcolor2           $bgcolor2          $text-color1         #00ff00
-client.unfocused        $bgcolor2           $bgcolor2          $text-color2         #00ff00
-client.focused_inactive $bg-color2          $bg-color2         $text-color1         #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color1         #00ff00
+#                       border              background         text                 indicator       child-border
+client.focused          $bgcolor2           $bgcolor2          $text-color1         #00ff00         #000000
+client.unfocused        $bgcolor2           $bgcolor2          $text-color2         #00ff00         #000000
+client.focused_inactive $bgcolor2           $bgcolor2          $text-color1         #00ff00         #000000
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color1         #00ff00         #000000
 
 hide_edge_borders both
 
@@ -149,6 +155,7 @@ exec --no-startup-id setxkbmap gb
 # This is to use the F keys on my laptop.
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+bindsym XF86AudioMute   exec amixer -D pulse sset Master toggle
 
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 #bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume

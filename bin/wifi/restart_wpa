@@ -1,0 +1,11 @@
+#! /bin/bash 
+
+if [[ $EUID -ne 0 ]]; then
+    echo "Please run as root"
+    echo "Exiting..."
+    exit 1
+fi
+
+killall wpa_supplicant
+wpa_supplicant -iwlp6s0 -B -c /etc/wpa_supplicant/wpa_supplicant.conf
+dhcpcd
