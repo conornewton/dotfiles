@@ -11,6 +11,6 @@ My current setup is using:
 - termite
 - bash
 
-
+[My vim dotfiles](www.github.com/conornewton/vim-dotfiles)
 
 ![desktop](./i3-screenshot.png)
