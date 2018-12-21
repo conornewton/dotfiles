@@ -27,7 +27,7 @@ font pango:Font Awesome, DejaVu Sans Mono, 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st -f "DejaVu Sans Mono:size=9"
+bindsym $mod+Return exec termite
 
 bindsym $mod+u [instance="dropdown"] scratchpad show [instance="dropdown"] move position center
 bindsym $mod+m [instance="media"] scratchpad show [instance="dropdown"] move position center
